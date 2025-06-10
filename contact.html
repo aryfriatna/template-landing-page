@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - TirePro Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <h1 class="text-2xl font-bold text-blue-600">TirePro</h1>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >About</a
+            >
+            <a
+              href="products.html"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Products</a
+            >
+            <a href="contact.html" class="text-blue-600 font-medium">Contact</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" class="text-gray-700">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a
+            href="index.html"
+            class="block px-3 py-2 text-gray-700 hover:text-blue-600"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="block px-3 py-2 text-gray-700 hover:text-blue-600"
+            >About</a
+          >
+          <a
+            href="products.html"
+            class="block px-3 py-2 text-gray-700 hover:text-blue-600"
+            >Products</a
+          >
+          <a
+            href="contact.html"
+            class="block px-3 py-2 text-blue-600 font-medium"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-gradient-to-r from-blue-600 to-blue-800 text-white pt-20"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">Hubungi Kami</h1>
+          <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+            Siap melayani kebutuhan ban industri Anda dengan pelayanan terbaik
+            dan harga kompetitif
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Contact Form -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Kirim Pesan</h2>
+            <form class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="firstName"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Nama Depan</label
+                  >
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="lastName"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Nama Belakang</label
+                  >
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="company"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                  >Nama Perusahaan</label
+                >
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                />
+              </div>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Nomor Telepon</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="product"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                  >Produk yang Diminati</label
+                >
+                <select
+                  id="product"
+                  name="product"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                >
+                  <option value="">Pilih Produk</option>
+                  <option value="forklift">Ban Forklift</option>
+                  <option value="dump-truck">Ban Dump Truck</option>
+                  <option value="tronton">Ban Tronton</option>
+                  <option value="light-truck">Ban Truck Ringan</option>
+                  <option value="other">Lainnya</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                  >Pesan</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Jelaskan kebutuhan Anda..."
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition"
+              >
+                Kirim Pesan
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+              Informasi Kontak
+            </h2>
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                  <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                    Alamat Kantor
+                  </h3>
+                  <p class="text-gray-600">
+                    Jl. Industri Raya No. 123<br />
+                    Kawasan Industri Pulogadung<br />
+                    Jakarta Timur 13260<br />
+                    Indonesia
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                  <i class="fas fa-phone text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                    Telepon
+                  </h3>
+                  <p class="text-gray-600">
+                    +62 21 1234 5678<br />
+                    +62 21 8765 4321
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                  <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                    Email
+                  </h3>
+                  <p class="text-gray-600">
+                    info@tirepro.co.id<br />
+                    sales@tirepro.co.id
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                  <i class="fas fa-clock text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                    Jam Operasional
+                  </h3>
+                  <p class="text-gray-600">
+                    Senin - Jumat: 08:00 - 17:00<br />
+                    Sabtu: 08:00 - 12:00<br />
+                    Minggu: Tutup
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="mt-8">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">
+                Ikuti Kami
+              </h3>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition"
+                >
+                  <i class="fab fa-facebook text-xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-pink-600 text-white p-3 rounded-lg hover:bg-pink-700 transition"
+                >
+                  <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-blue-800 text-white p-3 rounded-lg hover:bg-blue-900 transition"
+                >
+                  <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-green-600 text-white p-3 rounded-lg hover:bg-green-700 transition"
+                >
+                  <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Lokasi Kami</h2>
+          <p class="text-xl text-gray-600">
+            Kunjungi showroom kami untuk melihat langsung koleksi ban
+            berkualitas
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="h-96 bg-gray-300 flex items-center justify-center">
+            <div class="text-center">
+              <i class="fas fa-map-marked-alt text-6xl text-gray-500 mb-4"></i>
+              <p class="text-gray-600">Google Maps akan ditampilkan di sini</p>
+              <p class="text-sm text-gray-500 mt-2">
+                Embed Google Maps dengan koordinat lokasi kantor
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Pertanyaan yang Sering Diajukan
+          </h2>
+          <p class="text-xl text-gray-600">
+            Jawaban untuk pertanyaan umum tentang produk dan layanan kami
+          </p>
+        </div>
+        <div class="max-w-4xl mx-auto space-y-6">
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Apakah tersedia garansi untuk produk ban?
+            </h3>
+            <p class="text-gray-600">
+              Ya, semua produk ban kami dilengkapi dengan garansi resmi dari
+              manufacturer. Garansi mencakup cacat produksi dan kualitas
+              material sesuai dengan terms & conditions yang berlaku.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Berapa lama waktu pengiriman?
+            </h3>
+            <p class="text-gray-600">
+              Untuk area Jakarta dan sekitarnya, pengiriman dapat dilakukan
+              dalam 1-2 hari kerja. Untuk luar kota, waktu pengiriman 3-7 hari
+              kerja tergantung lokasi tujuan.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Apakah ada layanan pemasangan?
+            </h3>
+            <p class="text-gray-600">
+              Ya, kami menyediakan layanan pemasangan ban di workshop kami atau
+              bisa juga on-site untuk pembelian dalam jumlah besar. Hubungi tim
+              kami untuk informasi lebih lanjut.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Bagaimana cara mendapatkan penawaran harga?
+            </h3>
+            <p class="text-gray-600">
+              Anda dapat menghubungi tim sales kami melalui form kontak,
+              telepon, atau email. Sertakan spesifikasi ban yang dibutuhkan dan
+              jumlah pembelian untuk mendapatkan penawaran terbaik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold mb-4">TirePro</h3>
+            <p class="text-gray-400 mb-4">
+              Supplier ban terpercaya untuk semua kebutuhan industri dan
+              komersial Anda.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Menu</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="index.html" class="text-gray-400 hover:text-white"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="text-gray-400 hover:text-white"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="products.html" class="text-gray-400 hover:text-white"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="text-gray-400 hover:text-white"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Produk</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="products.html" class="text-gray-400 hover:text-white"
+                  >Ban Forklift</a
+                >
+              </li>
+              <li>
+                <a href="products.html" class="text-gray-400 hover:text-white"
+                  >Ban Dump Truck</a
+                >
+              </li>
+              <li>
+                <a href="products.html" class="text-gray-400 hover:text-white"
+                  >Ban Tronton</a
+                >
+              </li>
+              <li>
+                <a href="products.html" class="text-gray-400 hover:text-white"
+                  >Ban Truck Ringan</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Kontak</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <i class="fas fa-map-marker-alt mr-2"></i>Jakarta, Indonesia
+              </li>
+              <li><i class="fas fa-phone mr-2"></i>+62 21 1234 5678</li>
+              <li><i class="fas fa-envelope mr-2"></i>info@tirepro.co.id</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2024 TirePro Indonesia. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Form submission
+      const contactForm = document.querySelector("form");
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert(
+          "Terima kasih! Pesan Anda telah dikirim. Tim kami akan segera menghubungi Anda."
+        );
+      });
+    </script>
+  </body>
+</html>

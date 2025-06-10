@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - IndusTire Industrial Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ea580c",
+              secondary: "#dc2626",
+              accent: "#f97316",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Top Bar -->
+    <div class="bg-gray-900 text-white py-2">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center text-sm">
+          <div class="flex items-center space-x-6">
+            <span><i class="fas fa-phone mr-2"></i>+62 21 1234 5678</span>
+            <span
+              ><i class="fas fa-envelope mr-2"></i>info@industire.co.id</span
+            >
+          </div>
+          <div class="flex items-center space-x-4">
+            <a href="#" class="hover:text-primary transition-colors"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="hover:text-primary transition-colors"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" class="hover:text-primary transition-colors"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+              <div
+                class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center"
+              >
+                <i class="fas fa-industry text-white text-xl"></i>
+              </div>
+              <div>
+                <h1 class="text-2xl font-bold text-gray-900">IndusTire</h1>
+                <p class="text-xs text-gray-500">Industrial Solutions</p>
+              </div>
+            </a>
+          </div>
+          <div class="hidden lg:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >HOME</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >ABOUT</a
+            >
+            <a
+              href="products.html"
+              class="text-primary font-semibold border-b-2 border-primary pb-1"
+              >PRODUCTS</a
+            >
+            <a
+              href="contact.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >CONTACT</a
+            >
+            <a
+              href="contact.html"
+              class="bg-primary text-white px-6 py-3 font-bold hover:bg-secondary transition-colors"
+            >
+              GET QUOTE
+            </a>
+          </div>
+          <button id="mobile-menu-btn" class="lg:hidden text-gray-700">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+        <div class="px-4 py-4 space-y-3">
+          <a href="index.html" class="block text-gray-700 font-medium">HOME</a>
+          <a href="about.html" class="block text-gray-700 font-medium">ABOUT</a>
+          <a href="products.html" class="block text-primary font-semibold"
+            >PRODUCTS</a
+          >
+          <a href="contact.html" class="block text-gray-700 font-medium"
+            >CONTACT</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 text-white overflow-hidden">
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-primary/30 to-secondary/30"
+      ></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center">
+          <div
+            class="inline-block bg-primary px-4 py-2 text-sm font-bold tracking-wide mb-6"
+          >
+            PRODUCT CATALOG
+          </div>
+          <h1 class="text-5xl lg:text-7xl font-black leading-tight mb-6">
+            INDUSTRIAL
+            <span class="text-primary">TIRE SOLUTIONS</span>
+          </h1>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Koleksi lengkap ban premium untuk berbagai aplikasi industri berat
+            dengan teknologi terdepan
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Categories Navigation -->
+    <section class="py-12 bg-white border-b">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-4 gap-4">
+          <a
+            href="#forklift"
+            class="bg-gray-100 hover:bg-primary hover:text-white transition-all p-6 text-center group"
+          >
+            <i
+              class="fas fa-pallet text-3xl mb-3 text-primary group-hover:text-white"
+            ></i>
+            <h3 class="font-bold">FORKLIFT TIRES</h3>
+          </a>
+          <a
+            href="#dump-truck"
+            class="bg-gray-100 hover:bg-primary hover:text-white transition-all p-6 text-center group"
+          >
+            <i
+              class="fas fa-truck-monster text-3xl mb-3 text-primary group-hover:text-white"
+            ></i>
+            <h3 class="font-bold">DUMP TRUCK TIRES</h3>
+          </a>
+          <a
+            href="#tronton"
+            class="bg-gray-100 hover:bg-primary hover:text-white transition-all p-6 text-center group"
+          >
+            <i
+              class="fas fa-truck text-3xl mb-3 text-primary group-hover:text-white"
+            ></i>
+            <h3 class="font-bold">TRONTON TIRES</h3>
+          </a>
+          <a
+            href="#light-truck"
+            class="bg-gray-100 hover:bg-primary hover:text-white transition-all p-6 text-center group"
+          >
+            <i
+              class="fas fa-shipping-fast text-3xl mb-3 text-primary group-hover:text-white"
+            ></i>
+            <h3 class="font-bold">LIGHT TRUCK TIRES</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Forklift Tires -->
+    <section id="forklift" class="py-20 bg-white scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-16">
+          <div
+            class="inline-block bg-primary/10 text-primary px-4 py-2 text-sm font-bold tracking-wide mb-4"
+          >
+            FORKLIFT SOLUTIONS
+          </div>
+          <h2 class="text-4xl font-black text-gray-900 mb-4">FORKLIFT TIRES</h2>
+          <p class="text-xl text-gray-600 max-w-3xl">
+            Solusi ban terbaik untuk forklift dengan berbagai kapasitas,
+            tersedia dalam tipe solid, pneumatic, dan press-on untuk memenuhi
+            kebutuhan operasional warehouse dan industri.
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white shadow-lg hover:shadow-xl transition-all group border-l-4 border-primary"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center"
+            >
+              <i
+                class="fas fa-pallet text-6xl text-white group-hover:scale-110 transition-transform"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                SOLID FORKLIFT TIRES
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Ban solid tahan lama untuk penggunaan intensif di gudang dan
+                pabrik dengan zero maintenance
+              </p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Ukuran: 6.00-9, 7.00-12, 8.25-15</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Puncture & tear resistant</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Maintenance free operation</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold text-lg"
+                  >FROM RP 850.000</span
+                >
+                <a
+                  href="contact.html"
+                  class="bg-primary text-white px-6 py-2 font-bold hover:bg-secondary transition-colors"
+                >
+                  GET QUOTE
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-lg hover:shadow-xl transition-all group border-l-4 border-primary"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center"
+            >
+              <i
+                class="fas fa-pallet text-6xl text-white group-hover:scale-110 transition-transform"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                PNEUMATIC FORKLIFT TIRES
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Ban pneumatic untuk kenyamanan dan traksi optimal pada permukaan
+                outdoor
+              </p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Ukuran: 6.00-9, 7.00-12, 8.25-15</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Superior traction & comfort</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Perfect for outdoor use</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold text-lg"
+                  >FROM RP 650.000</span
+                >
+                <a
+                  href="contact.html"
+                  class="bg-primary text-white px-6 py-2 font-bold hover:bg-secondary transition-colors"
+                >
+                  GET QUOTE
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-lg hover:shadow-xl transition-all group border-l-4 border-primary"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center"
+            >
+              <i
+                class="fas fa-pallet text-6xl text-white group-hover:scale-110 transition-transform"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                PRESS-ON FORKLIFT TIRES
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Ban press-on untuk forklift elektrik dengan performa tinggi dan
+                efisiensi energi
+              </p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Ukuran: 18x7-8, 21x8-9, 23x9-10</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Non-marking compound</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Ideal for clean environments</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold text-lg"
+                  >FROM RP 450.000</span
+                >
+                <a
+                  href="contact.html"
+                  class="bg-primary text-white px-6 py-2 font-bold hover:bg-secondary transition-colors"
+                >
+                  GET QUOTE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dump Truck Tires -->
+    <section id="dump-truck" class="py-20 bg-gray-100 scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-16">
+          <div
+            class="inline-block bg-primary/10 text-primary px-4 py-2 text-sm font-bold tracking-wide mb-4"
+          >
+            HEAVY DUTY SOLUTIONS
+          </div>
+          <h2 class="text-4xl font-black text-gray-900 mb-4">
+            DUMP TRUCK TIRES
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl">
+            Ban heavy duty untuk dump truck dan alat berat dengan daya tahan
+            maksimal untuk aplikasi pertambangan, konstruksi, dan industri
+            berat.
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white shadow-lg hover:shadow-xl transition-all group border-l-4 border-secondary"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center"
+            >
+              <i
+                class="fas fa-truck-monster text-6xl text-white group-hover:scale-110 transition-transform"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                RADIAL DUMP TRUCK TIRES
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Ban radial untuk dump truck dengan daya tahan maksimal dan heat
+                resistance
+              </p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Ukuran: 12.00R20, 11.00R20</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Heat resistant compound</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Aggressive tread pattern</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold text-lg"
+                  >FROM RP 3.500.000</span
+                >
+                <a
+                  href="contact.html"
+                  class="bg-primary text-white px-6 py-2 font-bold hover:bg-secondary transition-colors"
+                >
+                  GET QUOTE
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-lg hover:shadow-xl transition-all group border-l-4 border-secondary"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center"
+            >
+              <i
+                class="fas fa-truck-monster text-6xl text-white group-hover:scale-110 transition-transform"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                BIAS DUMP TRUCK TIRES
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Ban bias ekonomis dengan performa handal untuk operasi dump
+                truck
+              </p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Ukuran: 12.00-20, 11.00-20</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Economical solution</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Suitable for hard surfaces</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold text-lg"
+                  >FROM RP 2.800.000</span
+                >
+                <a
+                  href="contact.html"
+                  class="bg-primary text-white px-6 py-2 font-bold hover:bg-secondary transition-colors"
+                >
+                  GET QUOTE
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-lg hover:shadow-xl transition-all group border-l-4 border-secondary"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center"
+            >
+              <i
+                class="fas fa-truck-monster text-6xl text-white group-hover:scale-110 transition-transform"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                OTR MINING TIRES
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Ban khusus untuk aplikasi pertambangan dan konstruksi berat
+                dengan extra durability
+              </p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Ukuran: 23.5R25, 26.5R25</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Extra deep tread depth</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Maximum heat resistance</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold text-lg"
+                  >FROM RP 15.000.000</span
+                >
+                <a
+                  href="contact.html"
+                  class="bg-primary text-white px-6 py-2 font-bold hover:bg-secondary transition-colors"
+                >
+                  GET QUOTE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tronton Tires -->
+    <section id="tronton" class="py-20 bg-white scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-16">
+          <div
+            class="inline-block bg-primary/10 text-primary px-4 py-2 text-sm font-bold tracking-wide mb-4"
+          >
+            LONG HAUL SOLUTIONS
+          </div>
+          <h2 class="text-4xl font-black text-gray-900 mb-4">TRONTON TIRES</h2>
+          <p class="text-xl text-gray-600 max-w-3xl">
+            Ban untuk tronton dan trailer dengan daya tahan tinggi, dirancang
+            untuk jarak tempuh panjang dan beban berat dengan efisiensi bahan
+            bakar optimal.
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white shadow-lg hover:shadow-xl transition-all group border-l-4 border-yellow-600"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-yellow-600 to-yellow-700 flex items-center justify-center"
+            >
+              <i
+                class="fas fa-truck text-6xl text-white group-hover:scale-110 transition-transform"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                STEER TRONTON TIRES
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Ban depan untuk kemudi dengan stabilitas tinggi dan steering
+                response yang excellent
+              </p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Ukuran: 11R22.5, 295/80R22.5</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Excellent steering response</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Low rolling resistance</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold text-lg"
+                  >FROM RP 2.200.000</span
+                >
+                <a
+                  href="contact.html"
+                  class="bg-primary text-white px-6 py-2 font-bold hover:bg-secondary transition-colors"
+                >
+                  GET QUOTE
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-lg hover:shadow-xl transition-all group border-l-4 border-yellow-600"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-yellow-600 to-yellow-700 flex items-center justify-center"
+            >
+              <i
+                class="fas fa-truck text-6xl text-white group-hover:scale-110 transition-transform"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                DRIVE TRONTON TIRES
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Ban penggerak dengan traksi optimal untuk beban berat dan
+                performa jarak jauh
+              </p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Ukuran: 11R22.5, 315/80R22.5</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Superior traction power</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>High mileage performance</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold text-lg"
+                  >FROM RP 2.400.000</span
+                >
+                <a
+                  href="contact.html"
+                  class="bg-primary text-white px-6 py-2 font-bold hover:bg-secondary transition-colors"
+                >
+                  GET QUOTE
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-lg hover:shadow-xl transition-all group border-l-4 border-yellow-600"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-yellow-600 to-yellow-700 flex items-center justify-center"
+            >
+              <i
+                class="fas fa-truck text-6xl text-white group-hover:scale-110 transition-transform"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                TRAILER TRONTON TIRES
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Ban trailer dengan ketahanan abrasi tinggi dan fuel efficiency
+                untuk operasi ekonomis
+              </p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Ukuran: 385/65R22.5, 425/65R22.5</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Long lasting tread life</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Maximum fuel efficiency</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold text-lg"
+                  >FROM RP 2.600.000</span
+                >
+                <a
+                  href="contact.html"
+                  class="bg-primary text-white px-6 py-2 font-bold hover:bg-secondary transition-colors"
+                >
+                  GET QUOTE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Light Truck Tires -->
+    <section id="light-truck" class="py-20 bg-gray-100 scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-16">
+          <div
+            class="inline-block bg-primary/10 text-primary px-4 py-2 text-sm font-bold tracking-wide mb-4"
+          >
+            COMMERCIAL SOLUTIONS
+          </div>
+          <h2 class="text-4xl font-black text-gray-900 mb-4">
+            LIGHT TRUCK TIRES
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl">
+            Ban untuk truck ringan dan kendaraan komersial dengan performa
+            optimal untuk distribusi barang, logistik, dan aplikasi komersial
+            sehari-hari.
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white shadow-lg hover:shadow-xl transition-all group border-l-4 border-blue-600"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center"
+            >
+              <i
+                class="fas fa-shipping-fast text-6xl text-white group-hover:scale-110 transition-transform"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                LIGHT TRUCK RADIAL
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Ban radial untuk truck ringan dengan efisiensi bahan bakar dan
+                comfort riding
+              </p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Ukuran: 7.50R16, 8.25R16</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Maximum fuel efficiency</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Comfortable ride quality</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold text-lg"
+                  >FROM RP 1.200.000</span
+                >
+                <a
+                  href="contact.html"
+                  class="bg-primary text-white px-6 py-2 font-bold hover:bg-secondary transition-colors"
+                >
+                  GET QUOTE
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-lg hover:shadow-xl transition-all group border-l-4 border-blue-600"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center"
+            >
+              <i
+                class="fas fa-shipping-fast text-6xl text-white group-hover:scale-110 transition-transform"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                LIGHT TRUCK BIAS
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Ban bias ekonomis untuk truck ringan dengan value for money
+                terbaik
+              </p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Ukuran: 7.00-16, 7.50-16</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Economical choice</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Good load capacity</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold text-lg"
+                  >FROM RP 950.000</span
+                >
+                <a
+                  href="contact.html"
+                  class="bg-primary text-white px-6 py-2 font-bold hover:bg-secondary transition-colors"
+                >
+                  GET QUOTE
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-lg hover:shadow-xl transition-all group border-l-4 border-blue-600"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center"
+            >
+              <i
+                class="fas fa-shipping-fast text-6xl text-white group-hover:scale-110 transition-transform"
+              ></i>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                VAN & PICKUP TIRES
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Ban khusus untuk van dan pickup dengan beban sedang dan
+                multi-purpose usage
+              </p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Ukuran: 185R14C, 195R15C</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Multi-purpose application</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                  <i class="fas fa-check-square text-primary"></i>
+                  <span>Durable construction</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-primary font-bold text-lg"
+                  >FROM RP 750.000</span
+                >
+                <a
+                  href="contact.html"
+                  class="bg-primary text-white px-6 py-2 font-bold hover:bg-secondary transition-colors"
+                >
+                  GET QUOTE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-4xl font-black mb-6">
+            READY TO POWER YOUR OPERATIONS?
+          </h2>
+          <p class="text-xl text-gray-300 mb-8">
+            Konsultasikan kebutuhan ban industri Anda dengan tim ahli kami dan
+            dapatkan solusi terbaik untuk meningkatkan produktivitas
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="contact.html"
+              class="bg-primary text-white px-8 py-4 font-bold hover:bg-secondary transition-colors"
+            >
+              GET FREE CONSULTATION
+            </a>
+            <a
+              href="#forklift"
+              class="border-2 border-white text-white px-8 py-4 font-bold hover:bg-white hover:text-gray-900 transition-colors"
+            >
+              VIEW ALL CATEGORIES
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-4 gap-8 mb-8">
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div
+                class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center"
+              >
+                <i class="fas fa-industry text-white text-lg"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">IndusTire</h3>
+                <p class="text-xs text-gray-400">Industrial Solutions</p>
+              </div>
+            </div>
+            <p class="text-gray-400 leading-relaxed">
+              Supplier ban industri terpercaya dengan teknologi terdepan dan
+              komitmen pada kualitas premium untuk semua kebutuhan operasional
+              Anda.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">NAVIGATION</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">PRODUCTS</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#forklift"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Forklift Tires</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#dump-truck"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Dump Truck Tires</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#tronton"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Tronton Tires</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#light-truck"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Light Truck Tires</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">CONTACT INFO</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-map-marker-alt text-primary"></i>
+                <span>Jakarta, Indonesia</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-phone text-primary"></i>
+                <span>+62 21 1234 5678</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-envelope text-primary"></i>
+                <span>info@industire.co.id</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+          <p>&copy; 2024 IndusTire Indonesia. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

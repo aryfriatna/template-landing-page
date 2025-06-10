@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - IndusTire Industrial Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ea580c",
+              secondary: "#dc2626",
+              accent: "#f97316",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Top Bar -->
+    <div class="bg-gray-900 text-white py-2">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center text-sm">
+          <div class="flex items-center space-x-6">
+            <span><i class="fas fa-phone mr-2"></i>+62 21 1234 5678</span>
+            <span
+              ><i class="fas fa-envelope mr-2"></i>info@industire.co.id</span
+            >
+          </div>
+          <div class="flex items-center space-x-4">
+            <a href="#" class="hover:text-primary transition-colors"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="hover:text-primary transition-colors"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" class="hover:text-primary transition-colors"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+              <div
+                class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center"
+              >
+                <i class="fas fa-industry text-white text-xl"></i>
+              </div>
+              <div>
+                <h1 class="text-2xl font-bold text-gray-900">IndusTire</h1>
+                <p class="text-xs text-gray-500">Industrial Solutions</p>
+              </div>
+            </a>
+          </div>
+          <div class="hidden lg:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >HOME</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >ABOUT</a
+            >
+            <a
+              href="products.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >PRODUCTS</a
+            >
+            <a
+              href="contact.html"
+              class="text-primary font-semibold border-b-2 border-primary pb-1"
+              >CONTACT</a
+            >
+            <a
+              href="contact.html"
+              class="bg-primary text-white px-6 py-3 font-bold hover:bg-secondary transition-colors"
+            >
+              GET QUOTE
+            </a>
+          </div>
+          <button id="mobile-menu-btn" class="lg:hidden text-gray-700">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+        <div class="px-4 py-4 space-y-3">
+          <a href="index.html" class="block text-gray-700 font-medium">HOME</a>
+          <a href="about.html" class="block text-gray-700 font-medium">ABOUT</a>
+          <a href="products.html" class="block text-gray-700 font-medium"
+            >PRODUCTS</a
+          >
+          <a href="contact.html" class="block text-primary font-semibold"
+            >CONTACT</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 text-white overflow-hidden">
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-primary/30 to-secondary/30"
+      ></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center">
+          <div
+            class="inline-block bg-primary px-4 py-2 text-sm font-bold tracking-wide mb-6"
+          >
+            CONTACT US
+          </div>
+          <h1 class="text-5xl lg:text-7xl font-black leading-tight mb-6">
+            GET IN
+            <span class="text-primary">TOUCH</span>
+          </h1>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Siap melayani kebutuhan ban industri Anda dengan pelayanan
+            profesional dan solusi terbaik
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16">
+          <!-- Contact Form -->
+          <div>
+            <div class="mb-10">
+              <div
+                class="inline-block bg-primary/10 text-primary px-4 py-2 text-sm font-bold tracking-wide mb-4"
+              >
+                SEND MESSAGE
+              </div>
+              <h2 class="text-3xl font-black text-gray-900 mb-4">
+                REQUEST A QUOTE
+              </h2>
+              <p class="text-gray-600">
+                Isi formulir di bawah ini dan tim ahli kami akan segera
+                menghubungi Anda dengan solusi terbaik
+              </p>
+            </div>
+            <form class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="firstName"
+                    class="block text-sm font-bold text-gray-700 mb-2"
+                    >FIRST NAME</label
+                  >
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    class="w-full px-4 py-3 border-2 border-gray-200 focus:border-primary focus:outline-none transition-colors"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="lastName"
+                    class="block text-sm font-bold text-gray-700 mb-2"
+                    >LAST NAME</label
+                  >
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    class="w-full px-4 py-3 border-2 border-gray-200 focus:border-primary focus:outline-none transition-colors"
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="company"
+                  class="block text-sm font-bold text-gray-700 mb-2"
+                  >COMPANY NAME</label
+                >
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  class="w-full px-4 py-3 border-2 border-gray-200 focus:border-primary focus:outline-none transition-colors"
+                />
+              </div>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-bold text-gray-700 mb-2"
+                    >EMAIL ADDRESS</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full px-4 py-3 border-2 border-gray-200 focus:border-primary focus:outline-none transition-colors"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-sm font-bold text-gray-700 mb-2"
+                    >PHONE NUMBER</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="w-full px-4 py-3 border-2 border-gray-200 focus:border-primary focus:outline-none transition-colors"
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="product"
+                  class="block text-sm font-bold text-gray-700 mb-2"
+                  >PRODUCT INTEREST</label
+                >
+                <select
+                  id="product"
+                  name="product"
+                  class="w-full px-4 py-3 border-2 border-gray-200 focus:border-primary focus:outline-none transition-colors"
+                >
+                  <option value="">Select Product Category</option>
+                  <option value="forklift">Forklift Tires</option>
+                  <option value="dump-truck">Dump Truck Tires</option>
+                  <option value="tronton">Tronton Tires</option>
+                  <option value="light-truck">Light Truck Tires</option>
+                  <option value="other">Other Industrial Tires</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-bold text-gray-700 mb-2"
+                  >MESSAGE</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="w-full px-4 py-3 border-2 border-gray-200 focus:border-primary focus:outline-none transition-colors"
+                  placeholder="Describe your requirements..."
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-primary text-white py-4 px-6 font-bold hover:bg-secondary transition-colors"
+              >
+                SEND MESSAGE
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div>
+            <div class="mb-10">
+              <div
+                class="inline-block bg-primary/10 text-primary px-4 py-2 text-sm font-bold tracking-wide mb-4"
+              >
+                CONTACT INFO
+              </div>
+              <h2 class="text-3xl font-black text-gray-900 mb-4">
+                GET IN TOUCH
+              </h2>
+              <p class="text-gray-600">
+                Hubungi kami melalui berbagai channel untuk mendapatkan solusi
+                terbaik
+              </p>
+            </div>
+            <div class="space-y-8">
+              <div
+                class="bg-gray-100 p-8 hover:shadow-lg transition-shadow border-l-4 border-primary"
+              >
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-16 h-16 bg-primary/10 flex items-center justify-center"
+                  >
+                    <i class="fas fa-map-marker-alt text-2xl text-primary"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                      HEAD OFFICE
+                    </h3>
+                    <p class="text-gray-600">
+                      Jl. Industri Raya No. 123<br />
+                      Kawasan Industri Pulogadung<br />
+                      Jakarta Timur 13260<br />
+                      Indonesia
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-gray-100 p-8 hover:shadow-lg transition-shadow border-l-4 border-primary"
+              >
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-16 h-16 bg-primary/10 flex items-center justify-center"
+                  >
+                    <i class="fas fa-phone text-2xl text-primary"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                      PHONE NUMBERS
+                    </h3>
+                    <p class="text-gray-600">
+                      Main: +62 21 1234 5678<br />
+                      Sales: +62 21 8765 4321<br />
+                      WhatsApp: +62 812 3456 7890
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-gray-100 p-8 hover:shadow-lg transition-shadow border-l-4 border-primary"
+              >
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-16 h-16 bg-primary/10 flex items-center justify-center"
+                  >
+                    <i class="fas fa-envelope text-2xl text-primary"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                      EMAIL ADDRESSES
+                    </h3>
+                    <p class="text-gray-600">
+                      General: info@industire.co.id<br />
+                      Sales: sales@industire.co.id<br />
+                      Support: support@industire.co.id
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-gray-100 p-8 hover:shadow-lg transition-shadow border-l-4 border-primary"
+              >
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-16 h-16 bg-primary/10 flex items-center justify-center"
+                  >
+                    <i class="fas fa-clock text-2xl text-primary"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                      BUSINESS HOURS
+                    </h3>
+                    <p class="text-gray-600">
+                      Monday - Friday: 08:00 - 17:00<br />
+                      Saturday: 08:00 - 12:00<br />
+                      Sunday: Closed<br />
+                      <span class="text-primary font-bold"
+                        >24/7 Emergency Support</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="mt-10">
+              <h3 class="text-lg font-bold text-gray-900 mb-4">FOLLOW US</h3>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="w-12 h-12 bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                >
+                  <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-12 h-12 bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                >
+                  <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-12 h-12 bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                >
+                  <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-12 h-12 bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                >
+                  <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-20 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <div
+            class="inline-block bg-primary/10 text-primary px-4 py-2 text-sm font-bold tracking-wide mb-4"
+          >
+            LOCATION
+          </div>
+          <h2 class="text-3xl font-black text-gray-900 mb-4">
+            VISIT OUR FACILITY
+          </h2>
+          <p class="text-xl text-gray-600">
+            Kunjungi showroom dan warehouse kami untuk melihat langsung koleksi
+            ban berkualitas premium
+          </p>
+        </div>
+        <div class="bg-white shadow-lg overflow-hidden">
+          <div class="h-96 bg-gray-300 flex items-center justify-center">
+            <div class="text-center">
+              <div
+                class="w-20 h-20 bg-primary/10 flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-map-marked-alt text-3xl text-primary"></i>
+              </div>
+              <p class="text-gray-600 font-bold">GOOGLE MAPS INTEGRATION</p>
+              <p class="text-sm text-gray-500 mt-2">
+                Embed Google Maps dengan koordinat lokasi kantor dan warehouse
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div
+            class="inline-block bg-primary/10 text-primary px-4 py-2 text-sm font-bold tracking-wide mb-4"
+          >
+            FAQ
+          </div>
+          <h2 class="text-3xl font-black text-gray-900 mb-4">
+            FREQUENTLY ASKED QUESTIONS
+          </h2>
+          <p class="text-xl text-gray-600">
+            Jawaban untuk pertanyaan umum tentang produk dan layanan kami
+          </p>
+        </div>
+        <div class="max-w-4xl mx-auto space-y-6">
+          <div
+            class="bg-gray-100 p-8 hover:shadow-lg transition-shadow border-l-4 border-primary"
+          >
+            <h3 class="text-lg font-bold text-gray-900 mb-3">
+              Apakah tersedia garansi untuk produk ban?
+            </h3>
+            <p class="text-gray-600">
+              Ya, semua produk ban kami dilengkapi dengan garansi resmi dari
+              manufacturer. Garansi mencakup cacat produksi dan kualitas
+              material sesuai dengan terms & conditions yang berlaku. Periode
+              garansi bervariasi tergantung jenis dan aplikasi ban.
+            </p>
+          </div>
+          <div
+            class="bg-gray-100 p-8 hover:shadow-lg transition-shadow border-l-4 border-primary"
+          >
+            <h3 class="text-lg font-bold text-gray-900 mb-3">
+              Berapa lama waktu pengiriman?
+            </h3>
+            <p class="text-gray-600">
+              Untuk area Jakarta dan sekitarnya, pengiriman dapat dilakukan
+              dalam 1-2 hari kerja. Untuk luar kota, waktu pengiriman 3-7 hari
+              kerja tergantung lokasi tujuan. Untuk pesanan dalam jumlah besar,
+              kami menyediakan layanan pengiriman khusus dengan jadwal yang
+              dapat disesuaikan.
+            </p>
+          </div>
+          <div
+            class="bg-gray-100 p-8 hover:shadow-lg transition-shadow border-l-4 border-primary"
+          >
+            <h3 class="text-lg font-bold text-gray-900 mb-3">
+              Apakah ada layanan pemasangan dan maintenance?
+            </h3>
+            <p class="text-gray-600">
+              Ya, kami menyediakan layanan pemasangan ban di workshop kami atau
+              on-site untuk pembelian dalam jumlah besar. Kami juga menyediakan
+              layanan maintenance, inspeksi berkala, dan training untuk
+              operator. Tim teknisi kami bersertifikat dan berpengalaman dalam
+              handling berbagai jenis ban industri.
+            </p>
+          </div>
+          <div
+            class="bg-gray-100 p-8 hover:shadow-lg transition-shadow border-l-4 border-primary"
+          >
+            <h3 class="text-lg font-bold text-gray-900 mb-3">
+              Bagaimana cara mendapatkan penawaran harga terbaik?
+            </h3>
+            <p class="text-gray-600">
+              Anda dapat menghubungi tim sales kami melalui form kontak,
+              telepon, atau email. Sertakan spesifikasi ban yang dibutuhkan,
+              jumlah pembelian, dan aplikasi penggunaan untuk mendapatkan
+              penawaran yang akurat. Kami memberikan harga khusus untuk
+              pembelian dalam volume besar dan kontrak jangka panjang.
+            </p>
+          </div>
+          <div
+            class="bg-gray-100 p-8 hover:shadow-lg transition-shadow border-l-4 border-primary"
+          >
+            <h3 class="text-lg font-bold text-gray-900 mb-3">
+              Apakah tersedia program financing atau leasing?
+            </h3>
+            <p class="text-gray-600">
+              Ya, kami bekerja sama dengan berbagai lembaga pembiayaan untuk
+              menyediakan program financing dan leasing yang fleksibel. Program
+              ini sangat cocok untuk perusahaan yang ingin mengoptimalkan cash
+              flow sambil tetap mendapatkan ban berkualitas premium untuk
+              operasional mereka.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-4 gap-8 mb-8">
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div
+                class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center"
+              >
+                <i class="fas fa-industry text-white text-lg"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">IndusTire</h3>
+                <p class="text-xs text-gray-400">Industrial Solutions</p>
+              </div>
+            </div>
+            <p class="text-gray-400 leading-relaxed">
+              Supplier ban industri terpercaya dengan teknologi terdepan dan
+              komitmen pada kualitas premium untuk semua kebutuhan operasional
+              Anda.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">NAVIGATION</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">PRODUCTS</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="products.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Forklift Tires</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Dump Truck Tires</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Tronton Tires</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Light Truck Tires</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">CONTACT INFO</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-map-marker-alt text-primary"></i>
+                <span>Jakarta, Indonesia</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-phone text-primary"></i>
+                <span>+62 21 1234 5678</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-envelope text-primary"></i>
+                <span>info@industire.co.id</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+          <p>&copy; 2024 IndusTire Indonesia. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Form submission
+      const contactForm = document.querySelector("form");
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert(
+          "Terima kasih! Pesan Anda telah dikirim. Tim kami akan segera menghubungi Anda."
+        );
+      });
+    </script>
+  </body>
+</html>

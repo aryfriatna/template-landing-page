@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - BanMaster Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10b981',
+                        secondary: '#059669'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full top-0 z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html">
+                    <div class="flex items-center space-x-2">
+                      <div
+                        class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center"
+                      >
+                        <i class="fas fa-circle text-white text-lg"></i>
+                      </div>
+                      <span class="text-2xl font-bold text-gray-900">BanMaster</span>
+                    </div>
+                  </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Beranda</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition-colors">Tentang</a>
+                    <a href="products.html" class="text-gray-600 hover:text-primary transition-colors">Produk</a>
+                    <a href="contact.html" class="text-primary font-medium border-b-2 border-primary pb-1">Kontak</a>
+                    <a href="contact.html" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition-colors">
+                        Hubungi Kami
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-gray-600">Beranda</a>
+                <a href="about.html" class="block text-gray-600">Tentang</a>
+                <a href="products.html" class="block text-gray-600">Produk</a>
+                <a href="contact.html" class="block text-primary font-medium">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <i class="fas fa-headset"></i>
+                <span>Hubungi Kami</span>
+            </div>
+            <h1 class="text-5xl font-bold text-gray-900 mb-6">
+                Siap <span class="text-primary">Membantu</span> Kebutuhan Anda
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Tim kami siap memberikan solusi terbaik untuk kebutuhan ban industri Anda
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div>
+                    <div class="mb-10">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Kirim Pesan</h2>
+                        <p class="text-gray-600">
+                            Isi formulir di bawah ini dan tim kami akan segera menghubungi Anda
+                        </p>
+                    </div>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">Nama Depan</label>
+                                <input type="text" id="firstName" name="firstName" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Nama Belakang</label>
+                                <input type="text" id="lastName" name="lastName" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Nama Perusahaan</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Nomor Telepon</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="product" class="block text-sm font-medium text-gray-700 mb-2">Produk yang Diminati</label>
+                            <select id="product" name="product" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Pilih Produk</option>
+                                <option value="forklift">Ban Forklift</option>
+                                <option value="dump-truck">Ban Dump Truck</option>
+                                <option value="tronton">Ban Tronton</option>
+                                <option value="light-truck">Ban Truck Ringan</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Pesan</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Jelaskan kebutuhan Anda..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-3 px-6 rounded-xl font-semibold hover:bg-secondary transition-colors">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <div class="mb-10">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Informasi Kontak</h2>
+                        <p class="text-gray-600">
+                            Hubungi kami melalui berbagai channel berikut
+                        </p>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="bg-gray-50 rounded-3xl p-8 hover:shadow-lg transition-shadow">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-xl text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2">Alamat Kantor</h3>
+                                    <p class="text-gray-600">
+                                        Jl. Industri Raya No. 123<br>
+                                        Kawasan Industri Pulogadung<br>
+                                        Jakarta Timur 13260<br>
+                                        Indonesia
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 rounded-3xl p-8 hover:shadow-lg transition-shadow">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-phone text-xl text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2">Telepon</h3>
+                                    <p class="text-gray-600">
+                                        +62 21 1234 5678<br>
+                                        +62 21 8765 4321
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 rounded-3xl p-8 hover:shadow-lg transition-shadow">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-envelope text-xl text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2">Email</h3>
+                                    <p class="text-gray-600">
+                                        info@banmaster.co.id<br>
+                                        sales@banmaster.co.id
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 rounded-3xl p-8 hover:shadow-lg transition-shadow">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-clock text-xl text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2">Jam Operasional</h3>
+                                    <p class="text-gray-600">
+                                        Senin - Jumat: 08:00 - 17:00<br>
+                                        Sabtu: 08:00 - 12:00<br>
+                                        Minggu: Tutup
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="mt-10">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Ikuti Kami</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Lokasi Kami</h2>
+                <p class="text-xl text-gray-600">Kunjungi showroom kami untuk melihat langsung koleksi ban berkualitas</p>
+            </div>
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
+                <div class="h-96 bg-gray-200 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-map-marked-alt text-2xl text-primary"></i>
+                        </div>
+                        <p class="text-gray-600">Google Maps akan ditampilkan di sini</p>
+                        <p class="text-sm text-gray-500 mt-2">Embed Google Maps dengan koordinat lokasi kantor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                    Pertanyaan yang Sering Diajukan
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Jawaban untuk pertanyaan umum tentang produk dan layanan kami
+                </p>
+            </div>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Apakah tersedia garansi untuk produk ban?</h3>
+                    <p class="text-gray-600">Ya, semua produk ban kami dilengkapi dengan garansi resmi dari manufacturer. Garansi mencakup cacat produksi dan kualitas material sesuai dengan terms & conditions yang berlaku.</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Berapa lama waktu pengiriman?</h3>
+                    <p class="text-gray-600">Untuk area Jakarta dan sekitarnya, pengiriman dapat dilakukan dalam 1-2 hari kerja. Untuk luar kota, waktu pengiriman 3-7 hari kerja tergantung lokasi tujuan.</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Apakah ada layanan pemasangan?</h3>
+                    <p class="text-gray-600">Ya, kami menyediakan layanan pemasangan ban di workshop kami atau bisa juga on-site untuk pembelian dalam jumlah besar. Hubungi tim kami untuk informasi lebih lanjut.</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Bagaimana cara mendapatkan penawaran harga?</h3>
+                    <p class="text-gray-600">Anda dapat menghubungi tim sales kami melalui form kontak, telepon, atau email. Sertakan spesifikasi ban yang dibutuhkan dan jumlah pembelian untuk mendapatkan penawaran terbaik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                            <i class="fas fa-circle text-white text-sm"></i>
+                        </div>
+                        <span class="text-xl font-bold">BanMaster</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Solusi ban industri terdepan dengan kualitas premium dan layanan profesional untuk semua kebutuhan Anda.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounde

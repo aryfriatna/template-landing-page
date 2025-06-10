@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk - BanMaster Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#10b981",
+              secondary: "#059669",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white">
+    <!-- Navigation -->
+    <nav
+      class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full top-0 z-50 border-b border-gray-100"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html">
+            <div class="flex items-center space-x-2">
+              <div
+                class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center"
+              >
+                <i class="fas fa-circle text-white text-lg"></i>
+              </div>
+              <span class="text-2xl font-bold text-gray-900">BanMaster</span>
+            </div>
+          </a>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="text-gray-600 hover:text-primary transition-colors"
+              >Beranda</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-600 hover:text-primary transition-colors"
+              >Tentang</a
+            >
+            <a
+              href="products.html"
+              class="text-primary font-medium border-b-2 border-primary pb-1"
+              >Produk</a
+            >
+            <a
+              href="contact.html"
+              class="text-gray-600 hover:text-primary transition-colors"
+              >Kontak</a
+            >
+            <a
+              href="contact.html"
+              class="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition-colors"
+            >
+              Hubungi Kami
+            </a>
+          </div>
+          <button id="mobile-menu-btn" class="md:hidden text-gray-600">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-100"
+      >
+        <div class="px-4 py-4 space-y-3">
+          <a href="index.html" class="block text-gray-600">Beranda</a>
+          <a href="about.html" class="block text-gray-600">Tentang</a>
+          <a href="products.html" class="block text-primary font-medium"
+            >Produk</a
+          >
+          <a href="contact.html" class="block text-gray-600">Kontak</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div
+          class="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6"
+        >
+          <i class="fas fa-tags"></i>
+          <span>Katalog Produk</span>
+        </div>
+        <h1 class="text-5xl font-bold text-gray-900 mb-6">
+          Solusi Ban <span class="text-primary">Berkualitas</span> untuk
+          Industri Anda
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          Koleksi lengkap ban premium untuk berbagai kebutuhan industri dan
+          komersial
+        </p>
+      </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-6 mb-16">
+          <a
+            href="#forklift"
+            class="bg-primary/5 hover:bg-primary/10 rounded-2xl p-6 text-center transition-colors group"
+          >
+            <div
+              class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors"
+            >
+              <i class="fas fa-pallet text-2xl text-primary"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">Ban Forklift</h3>
+          </a>
+          <a
+            href="#dump-truck"
+            class="bg-primary/5 hover:bg-primary/10 rounded-2xl p-6 text-center transition-colors group"
+          >
+            <div
+              class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors"
+            >
+              <i class="fas fa-truck-monster text-2xl text-primary"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">Ban Dump Truck</h3>
+          </a>
+          <a
+            href="#tronton"
+            class="bg-primary/5 hover:bg-primary/10 rounded-2xl p-6 text-center transition-colors group"
+          >
+            <div
+              class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors"
+            >
+              <i class="fas fa-truck text-2xl text-primary"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">Ban Tronton</h3>
+          </a>
+          <a
+            href="#light-truck"
+            class="bg-primary/5 hover:bg-primary/10 rounded-2xl p-6 text-center transition-colors group"
+          >
+            <div
+              class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors"
+            >
+              <i class="fas fa-shipping-fast text-2xl text-primary"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">Ban Truck Ringan</h3>
+          </a>
+        </div>
+
+        <!-- Ban Forklift -->
+        <div id="forklift" class="mb-24 scroll-mt-24">
+          <div class="flex items-center space-x-4 mb-8">
+            <div
+              class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center"
+            >
+              <i class="fas fa-pallet text-xl text-primary"></i>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900">Ban Forklift</h2>
+          </div>
+          <p class="text-lg text-gray-600 mb-10 max-w-3xl">
+            Solusi ban terbaik untuk forklift dengan berbagai kapasitas,
+            tersedia dalam tipe solid, pneumatic, dan press-on untuk memenuhi
+            kebutuhan operasional Anda.
+          </p>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center"
+              >
+                <i class="fas fa-pallet text-6xl text-white"></i>
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                  Ban Solid Forklift
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Ban solid tahan lama untuk penggunaan intensif di gudang dan
+                  pabrik
+                </p>
+                <div class="space-y-3 mb-6">
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Ukuran: 6.00-9, 7.00-12, 8.25-15</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Tahan tusukan dan sobek</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Maintenance free</span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary font-bold"
+                    >Mulai dari Rp 850.000</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors"
+                  >
+                    Tanya Harga
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center"
+              >
+                <i class="fas fa-pallet text-6xl text-white"></i>
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                  Ban Pneumatic Forklift
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Ban pneumatic untuk kenyamanan dan traksi optimal
+                </p>
+                <div class="space-y-3 mb-6">
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Ukuran: 6.00-9, 7.00-12, 8.25-15</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Traksi superior</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Cocok untuk outdoor</span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary font-bold"
+                    >Mulai dari Rp 650.000</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors"
+                  >
+                    Tanya Harga
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center"
+              >
+                <i class="fas fa-pallet text-6xl text-white"></i>
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                  Ban Press-On Forklift
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Ban press-on untuk forklift elektrik dengan performa tinggi
+                </p>
+                <div class="space-y-3 mb-6">
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Ukuran: 18x7-8, 21x8-9, 23x9-10</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Non-marking compound</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Ideal untuk indoor</span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary font-bold"
+                    >Mulai dari Rp 450.000</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors"
+                  >
+                    Tanya Harga
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ban Dump Truck -->
+        <div id="dump-truck" class="mb-24 scroll-mt-24">
+          <div class="flex items-center space-x-4 mb-8">
+            <div
+              class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center"
+            >
+              <i class="fas fa-truck-monster text-xl text-primary"></i>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900">Ban Dump Truck</h2>
+          </div>
+          <p class="text-lg text-gray-600 mb-10 max-w-3xl">
+            Ban heavy duty untuk dump truck dan alat berat dengan daya tahan
+            maksimal untuk aplikasi pertambangan, konstruksi, dan industri
+            berat.
+          </p>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center"
+              >
+                <i class="fas fa-truck-monster text-6xl text-white"></i>
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                  Ban Radial Dump Truck
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Ban radial untuk dump truck dengan daya tahan maksimal
+                </p>
+                <div class="space-y-3 mb-6">
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Ukuran: 12.00R20, 11.00R20</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Compound tahan panas</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Tread pattern agresif</span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary font-bold"
+                    >Mulai dari Rp 3.500.000</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors"
+                  >
+                    Tanya Harga
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center"
+              >
+                <i class="fas fa-truck-monster text-6xl text-white"></i>
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                  Ban Bias Dump Truck
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Ban bias ekonomis dengan performa handal
+                </p>
+                <div class="space-y-3 mb-6">
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Ukuran: 12.00-20, 11.00-20</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Harga ekonomis</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Cocok untuk jalan keras</span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary font-bold"
+                    >Mulai dari Rp 2.800.000</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors"
+                  >
+                    Tanya Harga
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center"
+              >
+                <i class="fas fa-truck-monster text-6xl text-white"></i>
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                  Ban OTR Mining
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Ban khusus untuk aplikasi pertambangan dan konstruksi berat
+                </p>
+                <div class="space-y-3 mb-6">
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Ukuran: 23.5R25, 26.5R25</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Extra deep tread</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Heat resistant</span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary font-bold"
+                    >Mulai dari Rp 15.000.000</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors"
+                  >
+                    Tanya Harga
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ban Tronton -->
+        <div id="tronton" class="mb-24 scroll-mt-24">
+          <div class="flex items-center space-x-4 mb-8">
+            <div
+              class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center"
+            >
+              <i class="fas fa-truck text-xl text-primary"></i>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900">Ban Tronton</h2>
+          </div>
+          <p class="text-lg text-gray-600 mb-10 max-w-3xl">
+            Ban untuk tronton dan trailer dengan daya tahan tinggi, dirancang
+            untuk jarak tempuh panjang dan beban berat.
+          </p>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center"
+              >
+                <i class="fas fa-truck text-6xl text-white"></i>
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                  Ban Steer Tronton
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Ban depan untuk kemudi dengan stabilitas tinggi
+                </p>
+                <div class="space-y-3 mb-6">
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Ukuran: 11R22.5, 295/80R22.5</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Excellent steering response</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Low rolling resistance</span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary font-bold"
+                    >Mulai dari Rp 2.200.000</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors"
+                  >
+                    Tanya Harga
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center"
+              >
+                <i class="fas fa-truck text-6xl text-white"></i>
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                  Ban Drive Tronton
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Ban penggerak dengan traksi optimal untuk beban berat
+                </p>
+                <div class="space-y-3 mb-6">
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Ukuran: 11R22.5, 315/80R22.5</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Superior traction</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>High mileage performance</span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary font-bold"
+                    >Mulai dari Rp 2.400.000</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors"
+                  >
+                    Tanya Harga
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center"
+              >
+                <i class="fas fa-truck text-6xl text-white"></i>
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                  Ban Trailer Tronton
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Ban trailer dengan ketahanan abrasi tinggi
+                </p>
+                <div class="space-y-3 mb-6">
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Ukuran: 385/65R22.5, 425/65R22.5</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Long lasting tread</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Fuel efficient</span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary font-bold"
+                    >Mulai dari Rp 2.600.000</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors"
+                  >
+                    Tanya Harga
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ban Truck Ringan -->
+        <div id="light-truck" class="mb-24 scroll-mt-24">
+          <div class="flex items-center space-x-4 mb-8">
+            <div
+              class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center"
+            >
+              <i class="fas fa-shipping-fast text-xl text-primary"></i>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900">Ban Truck Ringan</h2>
+          </div>
+          <p class="text-lg text-gray-600 mb-10 max-w-3xl">
+            Ban untuk truck ringan dan kendaraan komersial dengan performa
+            optimal untuk distribusi barang dan logistik.
+          </p>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center"
+              >
+                <i class="fas fa-shipping-fast text-6xl text-white"></i>
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                  Ban Light Truck Radial
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Ban radial untuk truck ringan dengan efisiensi bahan bakar
+                </p>
+                <div class="space-y-3 mb-6">
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Ukuran: 7.50R16, 8.25R16</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Fuel efficient</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Comfortable ride</span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary font-bold"
+                    >Mulai dari Rp 1.200.000</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors"
+                  >
+                    Tanya Harga
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center"
+              >
+                <i class="fas fa-shipping-fast text-6xl text-white"></i>
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                  Ban Light Truck Bias
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Ban bias ekonomis untuk truck ringan
+                </p>
+                <div class="space-y-3 mb-6">
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Ukuran: 7.00-16, 7.50-16</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Economical choice</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Good load capacity</span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary font-bold"
+                    >Mulai dari Rp 950.000</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors"
+                  >
+                    Tanya Harga
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center"
+              >
+                <i class="fas fa-shipping-fast text-6xl text-white"></i>
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                  Ban Van & Pickup
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Ban khusus untuk van dan pickup dengan beban sedang
+                </p>
+                <div class="space-y-3 mb-6">
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Ukuran: 185R14C, 195R15C</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Multi-purpose use</span>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2 text-sm text-gray-600"
+                  >
+                    <i class="fas fa-check-circle text-primary"></i>
+                    <span>Durable construction</span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary font-bold"
+                    >Mulai dari Rp 750.000</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors"
+                  >
+                    Tanya Harga
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="py-20 bg-gradient-to-r from-primary to-secondary text-white"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-6">Butuh Konsultasi Produk?</h2>
+        <p class="text-xl mb-8 text-green-100 max-w-3xl mx-auto">
+          Tim ahli kami siap membantu Anda memilih ban yang tepat untuk
+          kebutuhan spesifik Anda
+        </p>
+        <a
+          href="contact.html"
+          class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition inline-block"
+        >
+          Konsultasi Gratis
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div class="space-y-4">
+            <div class="flex items-center space-x-2">
+              <div
+                class="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center"
+              >
+                <i class="fas fa-circle text-white text-sm"></i>
+              </div>
+              <span class="text-xl font-bold">BanMaster</span>
+            </div>
+            <p class="text-gray-400 leading-relaxed">
+              Solusi ban industri terdepan dengan kualitas premium dan layanan
+              profesional untuk semua kebutuhan Anda.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Navigasi</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Tentang</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Produk</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Produk</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="products.html#forklift"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Ban Forklift</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html#dump-truck"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Ban Dump Truck</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html#tronton"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Ban Tronton</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html#light-truck"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Ban Light Truck</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Kontak</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-map-marker-alt text-primary"></i>
+                <span>Jakarta, Indonesia</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-phone text-primary"></i>
+                <span>+62 21 1234 5678</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-envelope text-primary"></i>
+                <span>info@banmaster.co.id</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+          <p>&copy; 2024 BanMaster Indonesia. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

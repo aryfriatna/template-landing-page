@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - IndusTire Industrial Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ea580c",
+              secondary: "#dc2626",
+              accent: "#f97316",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Top Bar -->
+    <div class="bg-gray-900 text-white py-2">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center text-sm">
+          <div class="flex items-center space-x-6">
+            <span><i class="fas fa-phone mr-2"></i>+62 21 1234 5678</span>
+            <span
+              ><i class="fas fa-envelope mr-2"></i>info@industire.co.id</span
+            >
+          </div>
+          <div class="flex items-center space-x-4">
+            <a href="#" class="hover:text-primary transition-colors"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="hover:text-primary transition-colors"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" class="hover:text-primary transition-colors"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+              <div
+                class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center"
+              >
+                <i class="fas fa-industry text-white text-xl"></i>
+              </div>
+              <div>
+                <h1 class="text-2xl font-bold text-gray-900">IndusTire</h1>
+                <p class="text-xs text-gray-500">Industrial Solutions</p>
+              </div>
+            </a>
+          </div>
+          <div class="hidden lg:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >HOME</a
+            >
+            <a
+              href="about.html"
+              class="text-primary font-semibold border-b-2 border-primary pb-1"
+              >ABOUT</a
+            >
+            <a
+              href="products.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >PRODUCTS</a
+            >
+            <a
+              href="contact.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >CONTACT</a
+            >
+            <a
+              href="contact.html"
+              class="bg-primary text-white px-6 py-3 font-bold hover:bg-secondary transition-colors"
+            >
+              GET QUOTE
+            </a>
+          </div>
+          <button id="mobile-menu-btn" class="lg:hidden text-gray-700">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+        <div class="px-4 py-4 space-y-3">
+          <a href="index.html" class="block text-gray-700 font-medium">HOME</a>
+          <a href="about.html" class="block text-primary font-semibold"
+            >ABOUT</a
+          >
+          <a href="products.html" class="block text-gray-700 font-medium"
+            >PRODUCTS</a
+          >
+          <a href="contact.html" class="block text-gray-700 font-medium"
+            >CONTACT</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 text-white overflow-hidden">
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-primary/30 to-secondary/30"
+      ></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center">
+          <div
+            class="inline-block bg-primary px-4 py-2 text-sm font-bold tracking-wide mb-6"
+          >
+            ABOUT INDUSTIRE
+          </div>
+          <h1 class="text-5xl lg:text-7xl font-black leading-tight mb-6">
+            INDUSTRIAL
+            <span class="text-primary">EXCELLENCE</span>
+          </h1>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Lebih dari 15 tahun menghadirkan solusi ban industri terdepan dengan
+            teknologi canggih dan komitmen pada kualitas premium
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <div
+              class="inline-block bg-primary/10 text-primary px-4 py-2 text-sm font-bold tracking-wide mb-6"
+            >
+              OUR STORY
+            </div>
+            <h2 class="text-4xl font-black text-gray-900 mb-6">
+              BUILT FOR INDUSTRY
+            </h2>
+            <div class="space-y-6 text-gray-600 leading-relaxed">
+              <p>
+                IndusTire didirikan pada tahun 2009 dengan misi sederhana namun
+                ambisius: menjadi penyedia solusi ban industri terdepan yang
+                dapat diandalkan oleh sektor industri berat Indonesia. Dimulai
+                dari workshop kecil di kawasan industri Jakarta, kami kini telah
+                berkembang menjadi distributor terpercaya dengan jaringan
+                nasional.
+              </p>
+              <p>
+                Dengan fokus pada teknologi terdepan dan standar kualitas
+                internasional, kami telah melayani ribuan klien dari sektor
+                pertambangan, konstruksi, logistik, dan manufaktur. Komitmen
+                kami pada excellence dan inovasi telah membawa IndusTire menjadi
+                nama yang dipercaya dalam industri ban Indonesia.
+              </p>
+              <p>
+                Hari ini, IndusTire bangga menjadi partner strategis bagi
+                perusahaan-perusahaan besar dalam mengoptimalkan operasional
+                mereka dengan solusi ban berkualitas premium.
+              </p>
+            </div>
+            <div class="grid grid-cols-3 gap-6 mt-10">
+              <div class="text-center">
+                <div class="text-4xl font-black text-primary mb-2">15+</div>
+                <div class="text-sm text-gray-600 font-bold">
+                  YEARS EXPERIENCE
+                </div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-black text-primary mb-2">5000+</div>
+                <div class="text-sm text-gray-600 font-bold">
+                  SATISFIED CLIENTS
+                </div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-black text-primary mb-2">24/7</div>
+                <div class="text-sm text-gray-600 font-bold">
+                  SUPPORT SERVICE
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="bg-gradient-to-br from-gray-900 to-gray-800 p-12 text-white"
+            >
+              <div class="text-center">
+                <div
+                  class="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6"
+                >
+                  <i class="fas fa-award text-4xl text-primary"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">ISO 9001:2015 CERTIFIED</h3>
+                <p class="text-gray-300 mb-6">
+                  Sertifikasi kualitas internasional untuk standar manajemen dan
+                  pelayanan terbaik
+                </p>
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                  <div class="bg-white/10 p-4 rounded">
+                    <div class="font-bold text-primary">QUALITY</div>
+                    <div>Management System</div>
+                  </div>
+                  <div class="bg-white/10 p-4 rounded">
+                    <div class="font-bold text-primary">CUSTOMER</div>
+                    <div>Satisfaction</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute -top-4 -right-4 w-32 h-32 bg-primary/20 rounded-full blur-xl"
+            ></div>
+            <div
+              class="absolute -bottom-4 -left-4 w-24 h-24 bg-secondary/20 rounded-full blur-xl"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision Mission -->
+    <section class="py-20 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div
+            class="inline-block bg-primary/10 text-primary px-4 py-2 text-sm font-bold tracking-wide mb-4"
+          >
+            VISION & MISSION
+          </div>
+          <h2 class="text-4xl font-black text-gray-900">OUR COMMITMENT</h2>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div class="bg-white shadow-lg hover:shadow-xl transition-all p-10">
+            <div
+              class="w-20 h-20 bg-primary/10 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-eye text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">VISION</h3>
+            <p class="text-gray-600 leading-relaxed text-lg">
+              Menjadi perusahaan penyedia solusi ban industri terdepan di Asia
+              Tenggara yang dikenal karena inovasi teknologi, kualitas premium,
+              dan layanan yang melampaui ekspektasi pelanggan dalam mendukung
+              pertumbuhan industri.
+            </p>
+          </div>
+          <div class="bg-white shadow-lg hover:shadow-xl transition-all p-10">
+            <div
+              class="w-20 h-20 bg-primary/10 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-bullseye text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">MISSION</h3>
+            <ul class="text-gray-600 space-y-4">
+              <li class="flex items-start space-x-3">
+                <i class="fas fa-check-square text-primary mt-1 text-lg"></i>
+                <span
+                  >Menyediakan produk ban berkualitas tinggi dengan teknologi
+                  terdepan untuk industri berat</span
+                >
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fas fa-check-square text-primary mt-1 text-lg"></i>
+                <span
+                  >Memberikan layanan profesional dan solusi yang tepat sasaran
+                  untuk setiap kebutuhan</span
+                >
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fas fa-check-square text-primary mt-1 text-lg"></i>
+                <span
+                  >Membangun kemitraan strategis jangka panjang yang saling
+                  menguntungkan</span
+                >
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fas fa-check-square text-primary mt-1 text-lg"></i>
+                <span
+                  >Berkontribusi pada kemajuan industri Indonesia melalui
+                  inovasi berkelanjutan</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Values -->
+    <section
+      class="py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div
+            class="inline-block bg-primary px-4 py-2 text-sm font-bold tracking-wide mb-4"
+          >
+            CORE VALUES
+          </div>
+          <h2 class="text-4xl font-black mb-4">WHAT DRIVES US</h2>
+          <p class="text-xl text-gray-300">
+            Nilai-nilai fundamental yang menjadi fondasi setiap keputusan dan
+            tindakan kami
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-4 gap-8">
+          <div class="text-center group">
+            <div
+              class="w-24 h-24 bg-white/10 group-hover:bg-primary transition-all flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-shield-alt text-4xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">INTEGRITY</h3>
+            <p class="text-gray-300">
+              Kejujuran dan transparansi dalam setiap aspek bisnis dan hubungan
+              dengan stakeholder
+            </p>
+          </div>
+          <div class="text-center group">
+            <div
+              class="w-24 h-24 bg-white/10 group-hover:bg-primary transition-all flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-trophy text-4xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">EXCELLENCE</h3>
+            <p class="text-gray-300">
+              Komitmen pada kualitas premium dan standar tertinggi dalam produk
+              dan layanan
+            </p>
+          </div>
+          <div class="text-center group">
+            <div
+              class="w-24 h-24 bg-white/10 group-hover:bg-primary transition-all flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-rocket text-4xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">INNOVATION</h3>
+            <p class="text-gray-300">
+              Terus berinovasi dan mengadopsi teknologi terdepan untuk solusi
+              yang lebih baik
+            </p>
+          </div>
+          <div class="text-center group">
+            <div
+              class="w-24 h-24 bg-white/10 group-hover:bg-primary transition-all flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-handshake text-4xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">PARTNERSHIP</h3>
+            <p class="text-gray-300">
+              Membangun hubungan kemitraan yang kuat dan berkelanjutan dengan
+              semua pihak
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div
+            class="inline-block bg-primary/10 text-primary px-4 py-2 text-sm font-bold tracking-wide mb-4"
+          >
+            OUR TEAM
+          </div>
+          <h2 class="text-4xl font-black text-gray-900 mb-4">
+            PROFESSIONAL EXPERTS
+          </h2>
+          <p class="text-xl text-gray-600">
+            Tim ahli berpengalaman yang berdedikasi untuk memberikan solusi
+            terbaik
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8">
+          <div class="text-center group">
+            <div
+              class="w-32 h-32 bg-gradient-to-br from-primary to-secondary flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform"
+            >
+              <i class="fas fa-users-cog text-5xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">SALES TEAM</h3>
+            <p class="text-gray-600">
+              Tim sales profesional dengan pengalaman mendalam dalam industri
+              ban dan pemahaman kebutuhan klien
+            </p>
+          </div>
+          <div class="text-center group">
+            <div
+              class="w-32 h-32 bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform"
+            >
+              <i class="fas fa-tools text-5xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              TECHNICAL SUPPORT
+            </h3>
+            <p class="text-gray-600">
+              Ahli teknis bersertifikat yang memberikan konsultasi dan dukungan
+              teknis untuk aplikasi industri
+            </p>
+          </div>
+          <div class="text-center group">
+            <div
+              class="w-32 h-32 bg-gradient-to-br from-green-600 to-green-700 flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform"
+            >
+              <i class="fas fa-headset text-5xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              CUSTOMER SERVICE
+            </h3>
+            <p class="text-gray-600">
+              Layanan pelanggan 24/7 yang responsif dan siap membantu setiap
+              kebutuhan operasional Anda
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-20 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div
+            class="inline-block bg-primary/10 text-primary px-4 py-2 text-sm font-bold tracking-wide mb-4"
+          >
+            CERTIFICATIONS
+          </div>
+          <h2 class="text-4xl font-black text-gray-900 mb-4">
+            QUALITY ASSURANCE
+          </h2>
+          <p class="text-xl text-gray-600">
+            Sertifikasi dan standar kualitas yang kami pegang
+          </p>
+        </div>
+        <div class="grid md:grid-cols-4 gap-8">
+          <div
+            class="bg-white p-8 text-center shadow-lg hover:shadow-xl transition-all"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-certificate text-2xl text-primary"></i>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">ISO 9001:2015</h3>
+            <p class="text-sm text-gray-600">Quality Management System</p>
+          </div>
+          <div
+            class="bg-white p-8 text-center shadow-lg hover:shadow-xl transition-all"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-leaf text-2xl text-primary"></i>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">ISO 14001</h3>
+            <p class="text-sm text-gray-600">Environmental Management</p>
+          </div>
+          <div
+            class="bg-white p-8 text-center shadow-lg hover:shadow-xl transition-all"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-hard-hat text-2xl text-primary"></i>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">OHSAS 18001</h3>
+            <p class="text-sm text-gray-600">Occupational Health & Safety</p>
+          </div>
+          <div
+            class="bg-white p-8 text-center shadow-lg hover:shadow-xl transition-all"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-check-circle text-2xl text-primary"></i>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">SNI Certified</h3>
+            <p class="text-sm text-gray-600">Indonesian National Standard</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-4 gap-8 mb-8">
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div
+                class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center"
+              >
+                <i class="fas fa-industry text-white text-lg"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">IndusTire</h3>
+                <p class="text-xs text-gray-400">Industrial Solutions</p>
+              </div>
+            </div>
+            <p class="text-gray-400 leading-relaxed">
+              Supplier ban industri terpercaya dengan teknologi terdepan dan
+              komitmen pada kualitas premium untuk semua kebutuhan operasional
+              Anda.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">NAVIGATION</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">PRODUCTS</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="products.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Forklift Tires</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Dump Truck Tires</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Tronton Tires</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Light Truck Tires</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">CONTACT INFO</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-map-marker-alt text-primary"></i>
+                <span>Jakarta, Indonesia</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-phone text-primary"></i>
+                <span>+62 21 1234 5678</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-envelope text-primary"></i>
+                <span>info@industire.co.id</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+          <p>&copy; 2024 IndusTire Indonesia. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
