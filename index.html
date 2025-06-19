@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TirePro Indonesia - Supplier Ban Berkualitas</title>
+    <title>
+      Garuda Trakindo - Solusi Tepat untuk Kebutuhan Angkutan Berat Anda
+    </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <!-- icon -->
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml" />
   </head>
   <body class="bg-gray-50">
     <!-- Navigation -->
@@ -16,9 +20,29 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <h1 class="text-2xl font-bold text-blue-600">TirePro</h1>
-            </div>
+            <a href="index.html" class="flex items-center">
+              <img src="img/logo1.png" alt="logo" class="w-24 h-auto mr-2" />
+
+              <!-- Desktop version -->
+              <div class="flex flex-col justify-center hidden md:flex">
+                <h1 class="text-2xl font-bold text-blue-600 leading-none -mb-1">
+                  Garuda
+                </h1>
+                <h1 class="text-2xl font-bold text-blue-600 leading-none">
+                  Trakindo
+                </h1>
+              </div>
+
+              <!-- Mobile version -->
+              <div class="flex flex-col justify-center md:hidden">
+                <h1 class="text-lg font-bold text-blue-600 leading-none mb-0">
+                  Garuda
+                </h1>
+                <h1 class="text-lg font-bold text-blue-600 leading-none">
+                  Trakindo
+                </h1>
+              </div>
+            </a>
           </div>
           <div class="hidden md:flex items-center space-x-8">
             <a href="index.html" class="text-blue-600 font-medium">Home</a>
@@ -78,12 +102,12 @@
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 class="text-4xl md:text-6xl font-bold mb-6">
-              Supplier Ban Terpercaya untuk Semua Kebutuhan
+              Spesialis Angkutan Berat dan Truk Tronton Terpercaya
             </h1>
-            <p class="text-xl mb-8 text-blue-100">
-              Menyediakan ban berkualitas tinggi untuk forklift, dump truck,
-              tronton, dan truck ringan dengan harga kompetitif dan layanan
-              terbaik.
+            <p class="text-xl mb-8 text-blue-100 text-justify">
+              Menyediakan layanan sewa truk tronton untuk kebutuhan logistik,
+              proyek industri, konstruksi, dan distribusi barang skala besar di
+              seluruh Indonesia.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
               <a
@@ -101,9 +125,14 @@
             </div>
           </div>
           <div class="text-center">
-            <div class="bg-white/10 rounded-lg p-8">
-              <i class="fas fa-truck text-8xl mb-4"></i>
-              <h3 class="text-2xl font-bold">Pengalaman 15+ Tahun</h3>
+            <div class="bg-white/10 rounded-lg">
+              <img
+                src="img/bg.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-lg"
+              />
+              <!-- <i class="fas fa-truck text-8xl mb-4"></i>
+              <h3 class="text-2xl font-bold">Pengalaman 15+ Tahun</h3> -->
             </div>
           </div>
         </div>
@@ -115,46 +144,61 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Mengapa Memilih TirePro?
+            Mengapa Memilih Garuda Trakindo?
           </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Kami berkomitmen memberikan produk dan layanan terbaik untuk
-            kebutuhan ban industri Anda
+          <p
+            class="text-xl text-justify md:text-center lg:text-center text-gray-600 max-w-3xl mx-auto"
+          >
+            Solusi terpercaya untuk kebutuhan logistik, pindahan, dan proyek
+            konstruksi Anda — dengan armada lengkap, harga fleksibel, dan
+            jangkauan pengiriman luas ke seluruh Indonesia.
           </p>
         </div>
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-4 gap-8">
           <div class="text-center p-6">
             <div
               class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
             >
-              <i class="fas fa-shield-alt text-2xl text-blue-600"></i>
+              <i class="fas fa-truck-moving text-2xl text-blue-600"></i>
             </div>
-            <h3 class="text-xl font-bold mb-3">Kualitas Terjamin</h3>
-            <p class="text-gray-600">
-              Ban berkualitas tinggi dari brand ternama dengan sertifikat
-              internasional
+            <h3 class="text-xl font-bold mb-3">Armada Lengkap</h3>
+            <p class="text-lg text-gray-600">
+              Tronton Bak, Box, Wingbox, dan Kontainer siap memenuhi kebutuhan
+              logistik Anda.
             </p>
           </div>
           <div class="text-center p-6">
             <div
               class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
             >
-              <i class="fas fa-shipping-fast text-2xl text-blue-600"></i>
+              <i class="fas fa-tags text-2xl text-blue-600"></i>
             </div>
-            <h3 class="text-xl font-bold mb-3">Pengiriman Cepat</h3>
-            <p class="text-gray-600">
-              Jaringan distribusi luas dengan pengiriman ke seluruh Indonesia
+            <h3 class="text-xl font-bold mb-3">Harga Kompetitif</h3>
+            <p class="text-lg text-gray-600">
+              Penawaran fleksibel dan bersaing sesuai kebutuhan pengiriman Anda.
             </p>
           </div>
           <div class="text-center p-6">
             <div
               class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
             >
-              <i class="fas fa-headset text-2xl text-blue-600"></i>
+              <i class="fas fa-user-tie text-2xl text-blue-600"></i>
             </div>
-            <h3 class="text-xl font-bold mb-3">Layanan 24/7</h3>
-            <p class="text-gray-600">
-              Tim customer service siap membantu Anda kapan saja
+            <h3 class="text-xl font-bold mb-3">Pengemudi Profesional</h3>
+            <p class="text-lg text-gray-600">
+              Ditangani oleh pengemudi bersertifikat dan berpengalaman.
+            </p>
+          </div>
+          <div class="text-center p-6">
+            <div
+              class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-map-marked-alt text-2xl text-blue-600"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Jangkauan Luas</h3>
+            <p class="text-lg text-gray-600">
+              Melayani pengiriman ke seluruh Jawa, Sumatera, Kalimantan, dan
+              Sulawesi.
             </p>
           </div>
         </div>
@@ -169,22 +213,28 @@
             Produk Unggulan Kami
           </h2>
           <p class="text-xl text-gray-600">
-            Berbagai jenis ban untuk kebutuhan industri dan komersial
+            Berbagai jenis Truk Tronton dan Alat Berat untuk memenuhi kebutuhan
+            logistik dan konstruksi Anda.
           </p>
         </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
             class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
           >
             <div
               class="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center"
             >
-              <i class="fas fa-pallet text-6xl text-white"></i>
+              <!-- <i class="fas fa-pallet text-6xl text-white"></i> -->
+              <img
+                src="img/engkel.png"
+                alt="Truk Engkel"
+                class="w-full h-full object-cover"
+              />
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Ban Forklift</h3>
+              <h3 class="text-xl font-bold mb-2">Truk Engkel</h3>
               <p class="text-gray-600 mb-4">
-                Ban solid dan pneumatic untuk forklift berbagai kapasitas
+                Truk engkel untuk pengiriman barang skala kecil hingga menengah
               </p>
               <a
                 href="products.html"
@@ -199,12 +249,17 @@
             <div
               class="h-48 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center"
             >
-              <i class="fas fa-truck-monster text-6xl text-white"></i>
+              <!-- <i class="fas fa-truck-monster text-6xl text-white"></i> -->
+              <img
+                src="img/wingbox.png"
+                alt="Truk Tronton Bak"
+                class="w-full h-full object-cover"
+              />
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Ban Dump Truck</h3>
+              <h3 class="text-xl font-bold mb-2">Truk Tronton</h3>
               <p class="text-gray-600 mb-4">
-                Ban heavy duty untuk dump truck dan alat berat
+                Truk tronton bak untuk pengangkutan barang berat dan besar
               </p>
               <a
                 href="products.html"
@@ -219,32 +274,17 @@
             <div
               class="h-48 bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center"
             >
-              <i class="fas fa-truck text-6xl text-white"></i>
+              <!-- <i class="fas fa-truck text-6xl text-white"></i> -->
+              <img
+                src="img/trailer1 (2).png"
+                alt="Truk Trailer"
+                class="w-full h-full object-cover"
+              />
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Ban Tronton</h3>
+              <h3 class="text-xl font-bold mb-2">Truk Trailer</h3>
               <p class="text-gray-600 mb-4">
-                Ban untuk tronton dan trailer dengan daya tahan tinggi
-              </p>
-              <a
-                href="products.html"
-                class="text-blue-600 font-semibold hover:underline"
-                >Lihat Detail →</a
-              >
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
-          >
-            <div
-              class="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center"
-            >
-              <i class="fas fa-shipping-fast text-6xl text-white"></i>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Ban Truck Ringan</h3>
-              <p class="text-gray-600 mb-4">
-                Ban untuk truck ringan dan kendaraan komersial
+                Truk trailer untuk pengangkutan barang berat dan besar
               </p>
               <a
                 href="products.html"
@@ -280,22 +320,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 class="text-2xl font-bold mb-4">TirePro</h3>
+            <h3 class="text-2xl font-bold mb-4">Garuda Trakindo</h3>
             <p class="text-gray-400 mb-4">
-              Supplier ban terpercaya untuk semua kebutuhan industri dan
-              komersial Anda.
+              Solusi Tepat untuk Kebutuhan Angkutan Berat Anda
             </p>
-            <div class="flex space-x-4">
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </div>
           </div>
           <div>
             <h4 class="text-lg font-semibold mb-4">Menu</h4>
@@ -327,22 +355,27 @@
             <ul class="space-y-2">
               <li>
                 <a href="products.html" class="text-gray-400 hover:text-white"
-                  >Ban Forklift</a
+                  >Truk Engkel</a
                 >
               </li>
               <li>
                 <a href="products.html" class="text-gray-400 hover:text-white"
-                  >Ban Dump Truck</a
+                  >Truk Tronton Bak</a
                 >
               </li>
               <li>
                 <a href="products.html" class="text-gray-400 hover:text-white"
-                  >Ban Tronton</a
+                  >Truk Tronton Box</a
                 >
               </li>
               <li>
                 <a href="products.html" class="text-gray-400 hover:text-white"
-                  >Ban Truck Ringan</a
+                  >Truk Tronton WingBox</a
+                >
+              </li>
+              <li>
+                <a href="products.html" class="text-gray-400 hover:text-white"
+                  >Truk Trailer</a
                 >
               </li>
             </ul>
@@ -351,17 +384,22 @@
             <h4 class="text-lg font-semibold mb-4">Kontak</h4>
             <ul class="space-y-2 text-gray-400">
               <li>
-                <i class="fas fa-map-marker-alt mr-2"></i>Jakarta, Indonesia
+                <i class="fas fa-map-marker-alt mr-2"></i>Jl. Merdeka, Pemaluan,
+                Kec. Sepaku, Kabupaten Penajam Paser Utara, Kalimantan Timur
+                76147
               </li>
-              <li><i class="fas fa-phone mr-2"></i>+62 21 1234 5678</li>
-              <li><i class="fas fa-envelope mr-2"></i>info@tirepro.co.id</li>
+              <li><i class="fas fa-phone mr-2"></i>+62 812-2506-0394</li>
+              <li>
+                <i class="fas fa-envelope mr-2"></i
+                >rentalgarudatrukindo@gmail.com
+              </li>
             </ul>
           </div>
         </div>
         <div
           class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
         >
-          <p>&copy; 2024 TirePro Indonesia. All rights reserved.</p>
+          <p>&copy; 2025 Garuda Trakindo. All rights reserved.</p>
         </div>
       </div>
     </footer>

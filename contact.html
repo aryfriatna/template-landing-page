@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - TirePro Indonesia</title>
+    <title>
+      Garuda Trakindo - Solusi Tepat untuk Kebutuhan Angkutan Berat Anda
+    </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <!-- icon -->
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml" />
   </head>
   <body class="bg-gray-50">
     <!-- Navigation -->
@@ -16,9 +20,29 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <h1 class="text-2xl font-bold text-blue-600">TirePro</h1>
-            </div>
+            <a href="index.html" class="flex items-center">
+              <img src="img/logo1.png" alt="logo" class="w-24 h-auto mr-2" />
+
+              <!-- Desktop version -->
+              <div class="flex flex-col justify-center hidden md:flex">
+                <h1 class="text-2xl font-bold text-blue-600 leading-none -mb-1">
+                  Garuda
+                </h1>
+                <h1 class="text-2xl font-bold text-blue-600 leading-none">
+                  Trakindo
+                </h1>
+              </div>
+
+              <!-- Mobile version -->
+              <div class="flex flex-col justify-center md:hidden">
+                <h1 class="text-lg font-bold text-blue-600 leading-none mb-0">
+                  Garuda
+                </h1>
+                <h1 class="text-lg font-bold text-blue-600 leading-none">
+                  Trakindo
+                </h1>
+              </div>
+            </a>
           </div>
           <div class="hidden md:flex items-center space-x-8">
             <a
@@ -80,8 +104,8 @@
         <div class="text-center">
           <h1 class="text-4xl md:text-6xl font-bold mb-6">Hubungi Kami</h1>
           <p class="text-xl text-blue-100 max-w-3xl mx-auto">
-            Siap melayani kebutuhan ban industri Anda dengan pelayanan terbaik
-            dan harga kompetitif
+            Siap melayani kebutuhan sewa truk Anda — dari logistik hingga proyek
+            konstruksi — dengan armada lengkap dan harga yang kompetitif.
           </p>
         </div>
       </div>
@@ -129,7 +153,7 @@
                 <label
                   for="company"
                   class="block text-sm font-medium text-gray-700 mb-2"
-                  >Nama Perusahaan</label
+                  >Nama Perusahaan (Opsional)</label
                 >
                 <input
                   type="text"
@@ -157,7 +181,7 @@
                   <label
                     for="phone"
                     class="block text-sm font-medium text-gray-700 mb-2"
-                    >Nomor Telepon</label
+                    >Nomor Telepon / WhatsApp</label
                   >
                   <input
                     type="tel"
@@ -170,21 +194,23 @@
               </div>
               <div>
                 <label
-                  for="product"
+                  for="truckType"
                   class="block text-sm font-medium text-gray-700 mb-2"
-                  >Produk yang Diminati</label
+                  >Jenis Truk yang Disewa</label
                 >
                 <select
-                  id="product"
-                  name="product"
+                  id="truckType"
+                  name="truckType"
                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  required
                 >
-                  <option value="">Pilih Produk</option>
-                  <option value="forklift">Ban Forklift</option>
-                  <option value="dump-truck">Ban Dump Truck</option>
-                  <option value="tronton">Ban Tronton</option>
-                  <option value="light-truck">Ban Truck Ringan</option>
-                  <option value="other">Lainnya</option>
+                  <option value="">Pilih Jenis Truk</option>
+                  <option value="engkel">Truk Engkel - 5 Ton</option>
+                  <option value="tronton-bak">Truk Tronton Bak - 20 Ton</option>
+                  <option value="tronton-box">Truk Tronton Box - 20 Ton</option>
+                  <option value="wingsbox">Truk Wingsbox - 22 Ton</option>
+                  <option value="trailer">Truk Trailer - 60 Ton</option>
+                  <option value="lainnya">Lainnya</option>
                 </select>
               </div>
               <div>
@@ -198,7 +224,7 @@
                   name="message"
                   rows="5"
                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Jelaskan kebutuhan Anda..."
+                  placeholder="Jelaskan kebutuhan Anda, lokasi penjemputan & tujuan, serta tanggal sewa yang diinginkan..."
                   required
                 ></textarea>
               </div>
@@ -226,9 +252,8 @@
                     Alamat Kantor
                   </h3>
                   <p class="text-gray-600">
-                    Jl. Industri Raya No. 123<br />
-                    Kawasan Industri Pulogadung<br />
-                    Jakarta Timur 13260<br />
+                    Jl. Merdeka, Pemaluan, Kec. Sepaku, <br />
+                    Kabupaten Penajam Paser Utara, Kalimantan Timur 76147 <br />
                     Indonesia
                   </p>
                 </div>
@@ -241,10 +266,7 @@
                   <h3 class="text-lg font-semibold text-gray-900 mb-2">
                     Telepon
                   </h3>
-                  <p class="text-gray-600">
-                    +62 21 1234 5678<br />
-                    +62 21 8765 4321
-                  </p>
+                  <p class="text-gray-600">+62 812 2506 0394</p>
                 </div>
               </div>
               <div class="flex items-start">
@@ -255,10 +277,7 @@
                   <h3 class="text-lg font-semibold text-gray-900 mb-2">
                     Email
                   </h3>
-                  <p class="text-gray-600">
-                    info@tirepro.co.id<br />
-                    sales@tirepro.co.id
-                  </p>
+                  <p class="text-gray-600">rentalgarudatrukindo@gmail.com</p>
                 </div>
               </div>
               <div class="flex items-start">
@@ -279,7 +298,7 @@
             </div>
 
             <!-- Social Media -->
-            <div class="mt-8">
+            <!-- <div class="mt-8">
               <h3 class="text-lg font-semibold text-gray-900 mb-4">
                 Ikuti Kami
               </h3>
@@ -309,7 +328,7 @@
                   <i class="fab fa-whatsapp text-xl"></i>
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -320,19 +339,17 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">Lokasi Kami</h2>
-          <p class="text-xl text-gray-600">
-            Kunjungi showroom kami untuk melihat langsung koleksi ban
-            berkualitas
-          </p>
         </div>
         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
           <div class="h-96 bg-gray-300 flex items-center justify-center">
-            <div class="text-center">
-              <i class="fas fa-map-marked-alt text-6xl text-gray-500 mb-4"></i>
-              <p class="text-gray-600">Google Maps akan ditampilkan di sini</p>
-              <p class="text-sm text-gray-500 mt-2">
-                Embed Google Maps dengan koordinat lokasi kantor
-              </p>
+            <div class="h-96 w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.259671225598!2d116.69452547407865!3d-0.9588169353540329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df6c8ce6e164263%3A0xd7817398f7abb3da!2sJl.%20Merdeka%2C%20Kec.%20Sepaku%2C%20Kabupaten%20Penajam%20Paser%20Utara%2C%20Kalimantan%20Timur%2076147!5e0!3m2!1sid!2sid!4v1750045544970!5m2!1sid!2sid"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-full h-full rounded-lg"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -347,48 +364,50 @@
             Pertanyaan yang Sering Diajukan
           </h2>
           <p class="text-xl text-gray-600">
-            Jawaban untuk pertanyaan umum tentang produk dan layanan kami
+            Jawaban atas pertanyaan umum seputar layanan sewa truk dari Garuda
+            Trukindo
           </p>
         </div>
         <div class="max-w-4xl mx-auto space-y-6">
           <div class="bg-gray-50 rounded-lg p-6">
             <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              Apakah tersedia garansi untuk produk ban?
+              Apa saja jenis truk yang tersedia untuk disewa?
             </h3>
             <p class="text-gray-600">
-              Ya, semua produk ban kami dilengkapi dengan garansi resmi dari
-              manufacturer. Garansi mencakup cacat produksi dan kualitas
-              material sesuai dengan terms & conditions yang berlaku.
+              Kami menyediakan berbagai jenis truk sesuai kebutuhan Anda,
+              seperti truk engkel (5 ton), tronton bak dan box (20 ton),
+              wingsbox (22 ton), hingga trailer (60 ton) untuk pengangkutan
+              kontainer dan proyek besar.
             </p>
           </div>
           <div class="bg-gray-50 rounded-lg p-6">
             <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              Berapa lama waktu pengiriman?
+              Apakah bisa sewa truk untuk luar pulau?
             </h3>
             <p class="text-gray-600">
-              Untuk area Jakarta dan sekitarnya, pengiriman dapat dilakukan
-              dalam 1-2 hari kerja. Untuk luar kota, waktu pengiriman 3-7 hari
-              kerja tergantung lokasi tujuan.
+              Bisa. Layanan kami mencakup seluruh wilayah Indonesia, termasuk
+              pengiriman antar pulau seperti Jawa, Sumatera, Kalimantan, dan
+              Sulawesi.
             </p>
           </div>
           <div class="bg-gray-50 rounded-lg p-6">
             <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              Apakah ada layanan pemasangan?
+              Bagaimana proses pemesanan truk?
             </h3>
             <p class="text-gray-600">
-              Ya, kami menyediakan layanan pemasangan ban di workshop kami atau
-              bisa juga on-site untuk pembelian dalam jumlah besar. Hubungi tim
-              kami untuk informasi lebih lanjut.
+              Prosesnya mudah! Pilih jenis truk, isi formulir pemesanan,
+              konfirmasi melalui WhatsApp/telepon, lalu lakukan pembayaran DP
+              untuk menjadwalkan penggunaan truk.
             </p>
           </div>
           <div class="bg-gray-50 rounded-lg p-6">
             <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              Bagaimana cara mendapatkan penawaran harga?
+              Apakah sopir dan bahan bakar sudah termasuk?
             </h3>
             <p class="text-gray-600">
-              Anda dapat menghubungi tim sales kami melalui form kontak,
-              telepon, atau email. Sertakan spesifikasi ban yang dibutuhkan dan
-              jumlah pembelian untuk mendapatkan penawaran terbaik.
+              Ya, harga sewa kami sudah termasuk jasa sopir profesional. Untuk
+              bahan bakar, tergantung kesepakatan awal — bisa sistem include
+              atau by request.
             </p>
           </div>
         </div>
@@ -400,22 +419,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 class="text-2xl font-bold mb-4">TirePro</h3>
+            <h3 class="text-2xl font-bold mb-4">Garuda Trakindo</h3>
             <p class="text-gray-400 mb-4">
-              Supplier ban terpercaya untuk semua kebutuhan industri dan
-              komersial Anda.
+              Solusi Tepat untuk Kebutuhan Angkutan Berat Anda
             </p>
-            <div class="flex space-x-4">
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </div>
           </div>
           <div>
             <h4 class="text-lg font-semibold mb-4">Menu</h4>
@@ -447,22 +454,27 @@
             <ul class="space-y-2">
               <li>
                 <a href="products.html" class="text-gray-400 hover:text-white"
-                  >Ban Forklift</a
+                  >Truk Engkel</a
                 >
               </li>
               <li>
                 <a href="products.html" class="text-gray-400 hover:text-white"
-                  >Ban Dump Truck</a
+                  >Truk Tronton Bak</a
                 >
               </li>
               <li>
                 <a href="products.html" class="text-gray-400 hover:text-white"
-                  >Ban Tronton</a
+                  >Truk Tronton Box</a
                 >
               </li>
               <li>
                 <a href="products.html" class="text-gray-400 hover:text-white"
-                  >Ban Truck Ringan</a
+                  >Truk Tronton WingBox</a
+                >
+              </li>
+              <li>
+                <a href="products.html" class="text-gray-400 hover:text-white"
+                  >Truk Trailer</a
                 >
               </li>
             </ul>
@@ -471,17 +483,22 @@
             <h4 class="text-lg font-semibold mb-4">Kontak</h4>
             <ul class="space-y-2 text-gray-400">
               <li>
-                <i class="fas fa-map-marker-alt mr-2"></i>Jakarta, Indonesia
+                <i class="fas fa-map-marker-alt mr-2"></i>Jl. Merdeka, Pemaluan,
+                Kec. Sepaku, Kabupaten Penajam Paser Utara, Kalimantan Timur
+                76147
               </li>
-              <li><i class="fas fa-phone mr-2"></i>+62 21 1234 5678</li>
-              <li><i class="fas fa-envelope mr-2"></i>info@tirepro.co.id</li>
+              <li><i class="fas fa-phone mr-2"></i>+62 812-2506-0394</li>
+              <li>
+                <i class="fas fa-envelope mr-2"></i
+                >rentalgarudatrukindo@gmail.com
+              </li>
             </ul>
           </div>
         </div>
         <div
           class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
         >
-          <p>&copy; 2024 TirePro Indonesia. All rights reserved.</p>
+          <p>&copy; 2025 Garuda Trakindo. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - TirePro Indonesia</title>
+    <title>
+      Garuda Trakindo - Solusi Tepat untuk Kebutuhan Angkutan Berat Anda
+    </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <!-- icon -->
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml" />
   </head>
   <body class="bg-gray-50">
     <!-- Navigation -->
@@ -16,9 +20,29 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <h1 class="text-2xl font-bold text-blue-600">TirePro</h1>
-            </div>
+            <a href="index.html" class="flex items-center">
+              <img src="img/logo1.png" alt="logo" class="w-24 h-auto mr-2" />
+
+              <!-- Desktop version -->
+              <div class="flex flex-col justify-center hidden md:flex">
+                <h1 class="text-2xl font-bold text-blue-600 leading-none -mb-1">
+                  Garuda
+                </h1>
+                <h1 class="text-2xl font-bold text-blue-600 leading-none">
+                  Trakindo
+                </h1>
+              </div>
+
+              <!-- Mobile version -->
+              <div class="flex flex-col justify-center md:hidden">
+                <h1 class="text-lg font-bold text-blue-600 leading-none mb-0">
+                  Garuda
+                </h1>
+                <h1 class="text-lg font-bold text-blue-600 leading-none">
+                  Trakindo
+                </h1>
+              </div>
+            </a>
           </div>
           <div class="hidden md:flex items-center space-x-8">
             <a
@@ -76,7 +100,9 @@
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div class="text-center">
-          <h1 class="text-4xl md:text-6xl font-bold mb-6">Tentang TirePro</h1>
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Tentang Garuda Trukindo
+          </h1>
           <p class="text-xl text-blue-100 max-w-3xl mx-auto">
             Lebih dari 15 tahun pengalaman dalam menyediakan solusi ban
             berkualitas tinggi untuk industri Indonesia
@@ -88,23 +114,28 @@
     <!-- Company Story -->
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="items-center text-justify">
           <div>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2
+              class="text-3xl lg:text-center md:text-4xl font-bold text-gray-900 mb-6"
+            >
               Cerita Kami
             </h2>
-            <p class="text-lg text-gray-600 mb-6">
-              TirePro Indonesia didirikan pada tahun 2009 dengan visi menjadi
-              supplier ban terdepan di Indonesia. Berawal dari sebuah toko kecil
-              di Jakarta, kini kami telah berkembang menjadi distributor
-              terpercaya dengan jaringan ke seluruh nusantara.
-            </p>
-            <p class="text-lg text-gray-600 mb-6">
-              Dengan komitmen pada kualitas dan pelayanan, kami telah melayani
-              ribuan pelanggan dari berbagai sektor industri, mulai dari
-              logistik, konstruksi, hingga pertambangan.
-            </p>
-            <div class="grid grid-cols-2 gap-6">
+            <div class="lg:flex lg:flex-col lg:items-center">
+              <p class="text-lg text-gray-600 mb-6 lg:max-w-6xl text-justify">
+                Selamat datang di Garuda Trukindo – Spesialis Angkutan Berat dan
+                Truk Tronton Terpercaya.Kami adalah perusahaan jasa transportasi
+                darat yang fokus menyediakan layanan sewa truk tronton untuk
+                kebutuhan logistik, proyek industri, konstruksi, dan distribusi
+                barang skala besar di seluruh Indonesia.
+              </p>
+              <p class="text-lg text-gray-600 mb-6 lg:max-w-6xl text-justify">
+                Dengan komitmen pada kualitas dan pelayanan, kami telah melayani
+                ribuan pelanggan dari berbagai sektor industri, mulai dari
+                logistik, konstruksi, hingga pertambangan.
+              </p>
+            </div>
+            <!-- <div class="grid grid-cols-2 gap-6">
               <div class="text-center">
                 <div class="text-3xl font-bold text-blue-600 mb-2">15+</div>
                 <div class="text-gray-600">Tahun Pengalaman</div>
@@ -113,9 +144,9 @@
                 <div class="text-3xl font-bold text-blue-600 mb-2">5000+</div>
                 <div class="text-gray-600">Pelanggan Puas</div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div
+          <!-- <div
             class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg p-12 text-white text-center"
           >
             <i class="fas fa-award text-8xl mb-6"></i>
@@ -123,7 +154,7 @@
             <p class="text-blue-100">
               Standar kualitas internasional dalam manajemen dan pelayanan
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -142,9 +173,9 @@
               <h3 class="text-2xl font-bold text-gray-900">Visi Kami</h3>
             </div>
             <p class="text-gray-600 text-center">
-              Menjadi supplier ban terdepan di Indonesia yang memberikan solusi
-              terbaik untuk kebutuhan industri dengan standar kualitas
-              internasional dan pelayanan yang memuaskan.
+              Menjadi mitra logistik darat terbaik di Indonesia untuk sektor
+              industri dan konstruksi, dengan layanan sewa truk tronton yang
+              andal dan terjangkau.
             </p>
           </div>
           <div class="bg-white rounded-lg p-8 shadow-lg">
@@ -159,16 +190,20 @@
             <ul class="text-gray-600 space-y-2">
               <li class="flex items-start">
                 <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
-                Menyediakan produk ban berkualitas tinggi dengan harga
-                kompetitif
+                Menyediakan armada tronton yang terawat dan siap operasi
               </li>
               <li class="flex items-start">
                 <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
-                Memberikan pelayanan terbaik dan solusi yang tepat
+                Memberikan pelayanan cepat dan responsif untuk setiap pelanggan
               </li>
               <li class="flex items-start">
                 <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
-                Membangun kemitraan jangka panjang dengan pelanggan
+                Menjamin keselamatan dan ketepatan waktu pengiriman
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                Menjalin kemitraan jangka panjang dengan perusahaan dan
+                kontraktor
               </li>
             </ul>
           </div>
@@ -286,22 +321,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 class="text-2xl font-bold mb-4">TirePro</h3>
+            <h3 class="text-2xl font-bold mb-4">Garuda Trakindo</h3>
             <p class="text-gray-400 mb-4">
-              Supplier ban terpercaya untuk semua kebutuhan industri dan
-              komersial Anda.
+              Solusi Tepat untuk Kebutuhan Angkutan Berat Anda
             </p>
-            <div class="flex space-x-4">
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </div>
           </div>
           <div>
             <h4 class="text-lg font-semibold mb-4">Menu</h4>
@@ -333,22 +356,27 @@
             <ul class="space-y-2">
               <li>
                 <a href="products.html" class="text-gray-400 hover:text-white"
-                  >Ban Forklift</a
+                  >Truk Engkel</a
                 >
               </li>
               <li>
                 <a href="products.html" class="text-gray-400 hover:text-white"
-                  >Ban Dump Truck</a
+                  >Truk Tronton Bak</a
                 >
               </li>
               <li>
                 <a href="products.html" class="text-gray-400 hover:text-white"
-                  >Ban Tronton</a
+                  >Truk Tronton Box</a
                 >
               </li>
               <li>
                 <a href="products.html" class="text-gray-400 hover:text-white"
-                  >Ban Truck Ringan</a
+                  >Truk Tronton WingBox</a
+                >
+              </li>
+              <li>
+                <a href="products.html" class="text-gray-400 hover:text-white"
+                  >Truk Trailer</a
                 >
               </li>
             </ul>
@@ -357,17 +385,22 @@
             <h4 class="text-lg font-semibold mb-4">Kontak</h4>
             <ul class="space-y-2 text-gray-400">
               <li>
-                <i class="fas fa-map-marker-alt mr-2"></i>Jakarta, Indonesia
+                <i class="fas fa-map-marker-alt mr-2"></i>Jl. Merdeka, Pemaluan,
+                Kec. Sepaku, Kabupaten Penajam Paser Utara, Kalimantan Timur
+                76147
               </li>
-              <li><i class="fas fa-phone mr-2"></i>+62 21 1234 5678</li>
-              <li><i class="fas fa-envelope mr-2"></i>info@tirepro.co.id</li>
+              <li><i class="fas fa-phone mr-2"></i>+62 812-2506-0394</li>
+              <li>
+                <i class="fas fa-envelope mr-2"></i
+                >rentalgarudatrukindo@gmail.com
+              </li>
             </ul>
           </div>
         </div>
         <div
           class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
         >
-          <p>&copy; 2024 TirePro Indonesia. All rights reserved.</p>
+          <p>&copy; 2025 Garuda Trakindo. All rights reserved.</p>
         </div>
       </div>
     </footer>
